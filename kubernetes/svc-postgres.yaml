@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: postgres-db
 spec:
+  type: NodePort
   selector:
     app: postgres-db
-  type: NodePort
   ports:
     - port: 5432  
       targetPort: 5432
