@@ -7,7 +7,6 @@ spec:
     app: postgres-db
   type: NodePort
   ports:
-    - name: postgres
-      port: 5432
+    - port: 5432  
       targetPort: 5432
-      protocol: TCP
+      nodePort: 32001
